@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="437.0" prefWidth="640.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="org.example.proyecto_2formularios.Controller.AppController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <children>
+      <AnchorPane prefHeight="527.0" prefWidth="698.0">
+         <children>
+            <Label layoutX="52.0" layoutY="108.0" text="Nombre" />
+            <Label layoutX="52.0" layoutY="156.0" text="Precio" />
+            <Label layoutX="54.0" layoutY="199.0" text="Color" />
+            <TextField id="txtNombre" fx:id="txtNombre" layoutX="139.0" layoutY="104.0" />
+            <TextField id="txtPrecio" fx:id="txtPrecio" layoutX="139.0" layoutY="152.0" />
+            <ComboBox id="cboxColor" fx:id="cboxColor" layoutX="139.0" layoutY="195.0" prefWidth="150.0" />
+            <Button id="btnNuevo" fx:id="btnNuevo" layoutX="34.0" layoutY="259.0" mnemonicParsing="false" text="Nuevo" />
+            <Button id="btnGuardar" fx:id="btnGuardar" layoutX="102.0" layoutY="259.0" mnemonicParsing="false" text="Guardar" />
+            <Button id="btnModificar" fx:id="btnModificar" layoutX="180.0" layoutY="259.0" mnemonicParsing="false" text="Modificar" />
+            <Button id="btnEliminar" fx:id="btnEliminar" layoutX="260.0" layoutY="259.0" mnemonicParsing="false" text="Eliminar" />
+            <Button id="btnCancelar" fx:id="btnCancelar" layoutX="101.0" layoutY="304.0" mnemonicParsing="false" text="Cancelar" />
+            <Label layoutX="399.0" layoutY="108.0" text="Id" />
+            <TextField id="txtId" fx:id="txtId" layoutX="430.0" layoutY="104.0" prefHeight="25.0" prefWidth="124.0" />
+            <ListView fx:id="lvFlores" layoutX="376.0" layoutY="141.0" prefHeight="231.0" prefWidth="200.0" />
+            <Label layoutX="244.0" layoutY="28.0" text="CRUD FLORES" textFill="#5a904e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEstado" layoutX="34.0" layoutY="71.0" prefHeight="17.0" prefWidth="534.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
